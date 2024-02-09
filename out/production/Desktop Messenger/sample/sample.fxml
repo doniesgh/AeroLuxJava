@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="616.0" prefWidth="993.0" style="-fx-background-color: white; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="616.0" prefWidth="993.0" style="-fx-background-color: white; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ReservationController">
    <children>
       <Pane layoutX="599.0" layoutY="-1.0" prefHeight="94.0" prefWidth="395.0" style="-fx-background-radius: 20 20 0 0;" stylesheets="@../../../../Downloads/javafx-sample-dashboard-master/javafx-sample-dashboard-master/src/css/fullpackstyling.css">
          <children>
@@ -106,16 +106,16 @@
                   <Font name="Poppins Regular" size="16.0" />
                </font>
             </Label>
-            <TableView id="table" layoutX="14.0" layoutY="42.0" prefHeight="503.0" prefWidth="802.0" style="-fx-border-color: blue; -fx-border-radius: 20px;">
+            <TableView id="table" fx:id="reservation_table" layoutX="14.0" layoutY="42.0" prefHeight="503.0" prefWidth="802.0" style="-fx-border-color: blue; -fx-border-radius: 20px;">
                <columns>
-                  <TableColumn id="id_reservation" prefWidth="113.59999084472656" text="Id Reservation" />
-                  <TableColumn id="id_trip" prefWidth="73.5999755859375" text="Id Trip" />
-                  <TableColumn id="agency_name" prefWidth="103.199951171875" text="Agency Name" />
-                  <TableColumn id="status" prefWidth="56.79998779296875" text="Status" />
-                  <TableColumn id="nb_seat" prefWidth="104.0" text="Number Seats" />
-                  <TableColumn id="price" prefWidth="67.199951171875" text="Price" />
-                  <TableColumn id="reservation_date" prefWidth="120.8001708984375" text="Reservation Date" />
-                  <TableColumn id="action" prefWidth="163.9998779296875" text="Action" />
+                  <TableColumn id="id_reservation" fx:id="id_reservation" prefWidth="113.59999084472656" text="Id Reservation" />
+                  <TableColumn id="id_trip" fx:id="id_trip" prefWidth="73.5999755859375" text="Id Trip" />
+                  <TableColumn id="agency_name" fx:id="agency_name" prefWidth="103.199951171875" text="Agency Name" />
+                  <TableColumn id="status" fx:id="status" prefWidth="56.79998779296875" text="Status" />
+                  <TableColumn id="nb_seat" fx:id="nb_seat" prefWidth="104.0" text="Number Seats" />
+                  <TableColumn id="price" fx:id="price" prefWidth="67.199951171875" text="Price" />
+                  <TableColumn id="reservation_date" fx:id="reservation_date" prefWidth="120.8001708984375" text="Reservation Date" />
+                  <TableColumn id="action" fx:id="action" prefWidth="163.9998779296875" text="Action" />
                </columns>
             </TableView>
          </children>
